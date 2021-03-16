@@ -12,7 +12,7 @@
     "axios": "^0.21.1",
     "discord.js": "^12.5.1",
     "dotenv": "^8.2.0",
-    "imdb": "^1.1.0",
+    "imdb-scrapper": "^2.3.1",
     "letterboxd-search": "^1.1.2",
     "rottentomatoes-data": "^2.1.8"
   }
