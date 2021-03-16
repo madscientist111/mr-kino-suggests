@@ -1,0 +1,19 @@
+{
+  "name": "mrkinosuggests",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "github - madscientist111",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.21.1",
+    "discord.js": "^12.5.1",
+    "dotenv": "^8.2.0",
+    "imdb": "^1.1.0",
+    "letterboxd-search": "^1.1.2",
+    "rottentomatoes-data": "^2.1.8"
+  }
+}
