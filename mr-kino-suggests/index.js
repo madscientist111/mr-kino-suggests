@@ -36,6 +36,8 @@ client.on("message", (message) => {
         client.commands.get("server").execute(message, args);
     } else if (command === "suggest") {
         client.commands.get("suggest").execute(message, args);
+    } else if (command === "tv") {
+        client.commands.get("tv").execute(message, args);
     }
 });
 
