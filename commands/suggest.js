@@ -17,6 +17,7 @@ module.exports = {
             .get(req)
             .then(async (response) => {
                 console.log("got the request");
+                message.channel.send("got the request");
                 const data = await response.data;
                 // console.log("got tmdb data");
                 // console.log(data);
