@@ -1,7 +1,7 @@
 {
   "name": "mrkinosuggests",
   "version": "1.0.0",
-  "description": "",
+  "description": "Work In Progress - Not Complete Yet. A discord bot to get details of a film from TMDB with ratings from different services. (update: and tv with ratings from only tmdb)",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -15,5 +15,15 @@
     "imdb-scrapper": "^2.3.1",
     "letterboxd-search": "^1.1.2",
     "rottentomatoes-data": "^2.1.8"
-  }
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ThenoobMario/mr-kino-suggests.git"
+  },
+  "keywords": [],
+  "bugs": {
+    "url": "https://github.com/ThenoobMario/mr-kino-suggests/issues"
+  },
+  "homepage": "https://github.com/ThenoobMario/mr-kino-suggests#readme"
 }
