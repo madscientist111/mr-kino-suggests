@@ -1,23 +1,27 @@
 # mr-kino-suggests
-Work In Progress - Not Complete Yet. A discord bot to get details of a film from TMDB with ratings from different services. (update: and tv with ratings from only tmdb)
+A discord bot to get details of a film/tv show from [TMDB](https://www.themoviedb.org/) with ratings from different services.
 
-main command : " Mr.kino Suggest 'FILM_TMDB_ID' "
+## Commands
+The following are the commands this bot has:
 
-main command forward : "mr.kino suggest 'film_tmdb_id' to 'discord_text_channel_id' "
+- To get information about a movie: `mr.kino suggest FILM-TMDB-ID`
 
-tv command : "mr.kino tv 'tvSeries_tmdb_id' "
+- To post the information about a movie to another text channel: `mr.kino suggest FILM-TMDB-ID to TEXT-CHANNEL-ID`
 
-tv command forward : "mr.kino tv 'tvSeries_tmdb_id' to 'discord_text_channel_id' "
+- To get information about a tv show: `mr.kino tv TV-SHOW-TMDB-ID`
 
-# TOKENS
-you'll need to use your own tokens
-for both TMDB and Discord-Bot
+- To post the information about a movie to another text channel: `mr.kino tv TV-SHOW-TMDB-ID to TEXT-CHANNEL-ID`
 
-Make a new env file named '.env' 
-and add DISCORD_TOKEN = 'your-discordbot-token', TMDB_TOKEN = 'your-tmdb-token'
+You can find the above mentioned *TMDB-IDs* from the  [TMDB](https://www.themoviedb.org/) website.
 
-# Install modules
-no need to install modules
+## TOKENS
+To use the bot you will need to get you own Discord and TMDB tokens and store them in a **.env** file.
 
-# Running
-nodemon
+This is how you **.env** file should look like:
+```
+DISCORD_TOKEN = 'your-discordbot-token'
+TMDB_TOKEN = 'your-tmdb-token'
+```
+
+## Licence
+This repository has [MIT Licence](LICENSE.md)
