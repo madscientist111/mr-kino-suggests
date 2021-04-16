@@ -3,6 +3,7 @@ const Discord = require("discord.js");
 const { scrapper } = require("imdb-scrapper");
 const lb = require("letterboxd-search");
 const rt = require("rottentomatoes-data");
+const msgEmbed = require("./msgEmbed.js");
 const baseReq = "https://api.themoviedb.org/3/movie/";
 
 module.exports = {
@@ -83,21 +84,11 @@ module.exports = {
                         : "https://www.themoviedb.org/t/p/w600_and_h900_bestv2" +
                           data.poster_path;
 
-                const exampleEmbed = new Discord.MessageEmbed()
-                    .setColor("#0099ff")
-                    .setAuthor(
-                        "Recommendation of the day!",
-                        "https://i.ibb.co/PDnLkQp/vga.png",
-                        "https://www.youtube.com/user/VGApdpu"
-                    )
+                const exampleEmbed = msgEmbed(data, url, img);
+
+                    exampleEmbed.setDescription(data.overview)
                     .setTitle(
                         imdb_data.title ? imdb_data.title : data.original_title
-                    )
-                    .setURL(url)
-                    .setDescription(data.overview)
-                    .setThumbnail(
-                        "https://www.themoviedb.org/t/p/w600_and_h900_bestv2" +
-                            data.poster_path
                     )
                     .addFields(
                         {
@@ -149,18 +140,8 @@ module.exports = {
                                   `[_visit_](${lbq})`
                             : "Unavailable",
                         true
-                    )
-                    // .addField("Rotten Tomatoes", data.rt + "%", true)
-                    .setImage(
-                        img
-                            ? img
-                            : "https://avatars.githubusercontent.com/u/22892193?s=460&u=96585117354875608d384137828c890a3b47a017&v=4"
-                    )
-                    .setTimestamp()
-                    .setFooter(
-                        "by shoo with love from VGA",
-                        "https://avatars.githubusercontent.com/u/22892193?s=460&u=96585117354875608d384137828c890a3b47a017&v=4"
                     );
+
                 console.log("****************here****************");
                 const chan =
                     args.length > 1
