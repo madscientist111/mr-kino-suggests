@@ -39,7 +39,9 @@ module.exports = {
                     .addFields(
                         {
                             name: "Created by:",
-                            value: creators,
+                            value: creators
+                                ? creators
+                                : "Unavailable",
                         },
                         {
                             name: "Runtime Per Episode:",
